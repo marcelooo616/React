@@ -1,0 +1,13 @@
+
+  .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(1,36,88);
+    background: linear-gradient(0deg, rgba(1,36,88,1) 0%,
+                                  rgba(45,86,253,1) 100%);
+    
+    
+  }
+  
