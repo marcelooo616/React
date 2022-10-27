@@ -1,0 +1,13 @@
+button{
+    background-color: blueviolet;
+    outline: none;
+    color: aliceblue;
+    width: 80px;
+    height: 75px;
+    margin: 10px;
+}
+.card .selected{
+    
+ background-color: aqua;   
+    
+}
