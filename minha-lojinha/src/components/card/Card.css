@@ -1,0 +1,15 @@
+.total{
+    display: flex;
+    justify-content: space-around;
+   
+    
+}
+.total .value{
+    font-size: 30px;
+    color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    border-radius:10px;
+    background-color: blueviolet;
+    border: 3px solid rgb(226, 192, 245);
+}

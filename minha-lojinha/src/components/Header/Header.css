@@ -1,0 +1,25 @@
+.header{
+    
+    max-height: 100%;
+    background-color:aliceblue;
+   
+}
+.topo{
+    display: flex;
+    justify-content: center;
+    background-color: #8a2be2;
+    color: aliceblue;
+}
+.section-value{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:aliceblue;
+}
+.header .home-product{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+   
+    
+    
+}

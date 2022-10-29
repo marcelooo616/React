@@ -1,0 +1,5 @@
+.products{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 300px 300px 300px;
+}
