@@ -1,0 +1,16 @@
+.header{
+    background-color: black;
+}
+.contaiener-products{
+    display:flex ;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px;
+   
+    justify-content: center;
+    
+    
+}
+.total{
+   background-color: aqua;
+}

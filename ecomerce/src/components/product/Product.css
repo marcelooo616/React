@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap');
+.container-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    width: 300px;
+    margin: 20px;
+
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    
+  
+}
+
+button{
+    background-color: rgb(34, 255, 0);
+    text-decoration: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+}
+.selected{
+    background-color: rgb(0, 102, 255);
+
+}
