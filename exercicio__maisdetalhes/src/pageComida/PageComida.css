@@ -1,0 +1,18 @@
+.page-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-repeat: no-repeat;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://i.imgur.com/gxrJDpZ.jpg");
+    background-repeat: no-repeat;
+    background-size:cover ;
+    
+
+}

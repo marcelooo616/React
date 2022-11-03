@@ -1,0 +1,25 @@
+p{
+    width: 500px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(236, 37, 37);
+    border-radius: 20px;
+    border-style: dashed;
+    border: 3px solid white;
+    color: aliceblue;
+
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 50px;
+    margin-top: 65px;
+    border-radius: 20px;
+    border: 3px solid rgb(236, 37, 37);
+}
