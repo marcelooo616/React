@@ -1,16 +1,24 @@
 import './Product.css';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Product(props){
 
-    const {price, name, oldPrice, image, updateTotalPrice} = props;
+    const {id,price, name, oldPrice, image, updateTotalPrice} = props;
     const [selected, setSelected] = useState(false);
-
+    const navigate = useNavigate();
     function action(){
         setSelected(!selected);
+       
     
      }
      
+     function buildViewProduct(){
+        navigate(`/products/${id}`);
+    }
+    function buildViewdetails(){
+        navigate(`/description/${id}`);
+    }
     
 
     function handleSelected(){
@@ -42,7 +50,7 @@ export default function Product(props){
                         <span className='price'> R$ {price.toFixed(2)}</span>
                     </div>
                     <div onClick={ handleSelected} className="buttons"  >
-                        <button className={classes.join(" ")} onClick={action}>comprar</button>
+                           <button className={classes.join(" ")} onClick={buildViewProduct}>Ver mais</button>                     
                     </div>
                 </div>
             </div>

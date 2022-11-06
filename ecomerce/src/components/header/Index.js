@@ -1,14 +1,21 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import Banner from '../static/banner/Index';
 import './Header.css'
 import Products from '../products/Index';
 import Card from '../static/card/Index';
 
-
+import CartContext from '../../context/CartContext';
 
 
 export default function Header(){
-    const [value, setValue] = useState(0)
+    const { cart } = useContext(CartContext);
+
+    function getTotalFromProducts(){
+        return cart.reduce((total, product) => {
+            return total += product.price;
+
+        },0)
+    }
     
     return(
         <div className='header'>
@@ -18,11 +25,11 @@ export default function Header(){
             </div>
            
             <div className='total'>
-                 <Card value= {value.toFixed(2)}/>
+                 <Card value= {getTotalFromProducts().toFixed(2)}/>
             </div>
             <div className='contaiener-products'>
             
-              <Products updateTotalPrice={(price) => setValue(value + price)}/>
+              <Products />
             </div>
              
         </div>
