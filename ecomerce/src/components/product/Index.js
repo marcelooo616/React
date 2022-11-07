@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 export default function Product(props){
 
-    const {id,price, name, oldPrice, image, updateTotalPrice} = props;
+    const {id,price, name, oldPrice, image,qtd, updateTotalPrice} = props;
     const [selected, setSelected] = useState(false);
     const navigate = useNavigate();
     function action(){
@@ -47,7 +47,8 @@ export default function Product(props){
                     </div>
                     <div className='card-info'>
                         <span className='nome'> {name}</span>
-                        <span className='price'> R$ {price.toFixed(2)}</span>
+                        <span className='price'> R$ {price.toFixed(2) }</span>
+                        <span className='qtd'>{qtd}</span>
                     </div>
                     <div onClick={ handleSelected} className="buttons"  >
                            <button className={classes.join(" ")} onClick={buildViewProduct}>Ver mais</button>                     

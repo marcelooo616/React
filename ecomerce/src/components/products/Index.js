@@ -47,7 +47,8 @@ export default function Products(props){
               id={product.id}
               image={product.image}
               name={product.name}
-              price={product.price}
+              price={product.price }
+              qtd={product.qtd }
               updateTotalPrice={(price) => updateTotalPrice(price)} 
                                       
             />
@@ -56,7 +57,7 @@ export default function Products(props){
         })
       }
     
-
+      
       const products = buildProductsList();
     return(
         <>

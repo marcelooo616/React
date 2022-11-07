@@ -29,13 +29,21 @@ export default function Vendas(){
       }
 
       function addProduct(){
-        if(isProductAlreadySelected()){
+     /*  if(isProductAlreadySelected()){
             const updateProductList = removeProduct();
             setCart(updateProductList);
         }else{
             setCart([...cart, product]);
-        }
+        }*/
+       const copyProductsCart = [...cart, product];
+        
+        const item = copyProductsCart.find((productOnCart) => product.id === productOnCart.id);
+        console.log(item);
+
+        
+        setCart([...cart, product]);
       }
+
 
       function isProductAlreadySelected(){
          return cart.find(productOnCart => product.id === productOnCart.id);   
@@ -45,6 +53,7 @@ export default function Vendas(){
         return cart.filter(productOnCart => product.id !== productOnCart.id);
       }
 
+      
       
 
     return(
@@ -62,12 +71,16 @@ export default function Vendas(){
                             </div>
                             <div className='card-info'>
                                 <span className='nome'> {product.name}</span>
-                                <span className='price'> R$ {product.price.toFixed(2)}</span>
+                                <span className='price'> R$ {product.price.toFixed(2) } </span>
+                                <span className='qtd'>{cart.length}</span>
                             </div>
                             <div className="buttons-vendas"  >                      
                                 <button className='margin-right' onClick={backHome} >Back</button>
-                                <button className='margin-left' onClick={addProduct} >{product && !isProductAlreadySelected() ? <>add Cart</> : <>Remove</>}</button>                       
+                                <button className='margin-left' onClick={addProduct} >{product && !isProductAlreadySelected() ? <>add Cart</> : <>Remove</>}</button>   
+                                                  
                             </div>
+                               <button onClick={addProduct }>+</button>    
+                                <button>-</button>  
                         </div>
                    </div>
                     <div className='details'>

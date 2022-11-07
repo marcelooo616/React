@@ -5,14 +5,16 @@
           "name": "Tênis Nike Revolution 5 Max" ,
           "price": 249.99,
           "oldPrice": 349.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/94313731.jpg",
+          "qtd": 1
         },
         {
           "id": "94313762",
           "name": "Tênis Nike Revolution 5",
           "price": 249.99,
           "oldPrice": 349.99,
-          "image": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg"
+          "image": "https://imgcentauro-a.akamaihd.net/230x230/94313762.jpg",
+          "qtd": 1
         },
         
         { 

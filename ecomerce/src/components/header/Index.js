@@ -12,7 +12,7 @@ export default function Header(){
 
     function getTotalFromProducts(){
         return cart.reduce((total, product) => {
-            return total += product.price;
+            return total += product.price  ;
 
         },0)
     }
